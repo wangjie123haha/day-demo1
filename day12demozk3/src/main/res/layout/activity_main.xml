@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.day12demozk3.ui.MainActivity">
+
+    <com.example.day12demozk3.ui.circleview
+        android:id="@+id/cv_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:clolor="@color/colorred"
+        app:radius="40" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_alignParentBottom="true"
+       android:orientation="vertical"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal">
+           <Button
+
+               android:id="@+id/scale"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:text="缩放"
+               android:textSize="20sp" />
+
+           <Button
+               android:id="@+id/route"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:text="旋转"
+               android:textSize="20sp" />
+
+           <Button
+
+               android:id="@+id/alpha"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:text="透明"
+               android:textSize="20sp" />
+
+           <Button
+               android:id="@+id/translate"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:text="平移"
+
+               android:textSize="20sp" />
+       </LinearLayout>
+       <Button
+           android:id="@+id/animatot_et"
+           android:text="动画集"
+           android:textSize="20sp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+   </LinearLayout>
+    
+</RelativeLayout>
